@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age-Calculator</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg shadow-sm navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img class="nav-logo w-25" src="img/Calculator.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link fs-5 my-nav-items" style="--bs-link-hover-color-rgb: 25, 135, 84;" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5 my-nav-items" href="#">Clock</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5 my-nav-items" href="#">Navigator</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5 my-nav-items" href="#">Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link fs-5 my-nav-items" href="#">Hire me</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!--Body-->
+    <div class="my-background">
+        <div class="container-fluid p-3">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="mt-3 fw-bold font-monospace">Age Calculator</h1>
+                    <h4 for="ageInput">Enter Your Age:</h4>
+                    <input type="number" class="p-2 mt-2" id="ageInput" placeholder="Type your age" required><br>
+                    <button onclick="ageCalculator()" class="btn btn-primary mt-3 rounded-4 fw-bold">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Cards-->
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 col-12 offset-xl-5 offset-lg-5 offset-md-4 offset-sm-3 offset-3">
+                    <div id="resultCard-1" class="d-none card w-50 p-1 rounded-3 shadow-sm">
+                        <img src="https://cdn.pixabay.com/photo/2015/06/22/08/40/child-817373_640.jpg" class="card-title w-100 rounded-3" id="resultTitle">
+                        <p class="ps-1 fw-semibold fst-italic">You are child because you are under 18.</p>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-success btn-sm w-50 rounded-3 fw-bold my-btn">Learn more</button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 col-12 offset-xl-5 offset-lg-5 offset-md-4 offset-sm-3 offset-3">
+                    <div id="resultCard-2" class="d-none card w-50 p-1 rounded-3 shadow-sm">
+                        <img src="https://media.istockphoto.com/id/1319763895/photo/smiling-mixed-race-mature-man-on-grey-background.jpg?s=612x612&w=0&k=20&c=ZiuzNX9LhTMMcRFrYNfq_zFR7O_aH-q7x1L5elko5uU=" class="card-text w-100 rounded-3">
+                        <p class="p-1 fw-semibold fst-italic">You are an Adult because you are 18+</p>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-success btn-sm w-50 rounded-3 fw-bold my-btn">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid bg-dark text-light">
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                <img class="w-50" src="img/Calculator.png" alt="">        
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                <p class="my-1 mt-3">This age calculator <br> is only for knowing <br> the human stage of <br> their life.</p>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                <h6 class="mt-4">Follow Me</h6>
+                <img class="my-icon" src="img/fb.png" alt="">
+                <img class="w-25" src="img/YT.png" alt="">
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12">
+                <h6 class="mt-3">Address</h6>
+                <p>Mirpur, Dhaka-1216</p>
+                <p>01795-xxxxxx (Help Line)</p>   
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                <h6 class="mt-4">Information</h6>
+                <a class="text-decoration-none" href="#">About Me</a>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12">
+                <h6 class="mt-3">Legal</h6>
+                <a class="text-decoration-none" href="#">Refund Policy</a><br>
+                <a class="text-decoration-none" href="#">Terms & Condition</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

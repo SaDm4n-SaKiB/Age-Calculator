@@ -1,0 +1,11 @@
+.my-background{
+  background-image: url(https://media.discordapp.net/attachments/1186346970135146558/1193684954442367118/calculator.png?ex=65ad9cbe&is=659b27be&hm=606881bb1b9f80465f7b94b5561f8628312348d52bdfba8ab56bd249bac6a1cf&=&format=webp&quality=lossless&width=890&height=445); 
+  background-size: cover;
+  background-position: center center;
+  height: 76vh;
+     
+}
+
+.my-icon{
+  width: 32px;
+}
